@@ -43,6 +43,8 @@ public class Main {
         Domicilio domicilioV2 = new Domicilio("Calle 3", "3003", "Maipu", "Mendoza");
         Voluntario voluntario2 = new Voluntario("Pedro", "12565678", "pedrito@gmail.com", domicilioV2);
         capacitacion.agregarVoluntario(voluntario2);
+        voluntario2.getTurno().setFecha(new Date());
+        voluntario2.getTurno().setHorario("12:00");
 
         //Una donación realizada por el donante
         Domicilio domicilioD = new Domicilio("Calle 4", "4004", "Las Heras", "Mendoza");
